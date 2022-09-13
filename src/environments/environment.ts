@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  usersService: "https://monkfish-app-s4wv3.ondigitalocean.app",
+  apiUrl: "https://king-prawn-app-bfapo.ondigitalocean.app/api",
+  apiBaseUrl: "https://king-prawn-app-bfapo.ondigitalocean.app",
 };
 
 /*
