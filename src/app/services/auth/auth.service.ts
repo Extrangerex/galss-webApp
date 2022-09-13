@@ -15,8 +15,8 @@ export class AuthService {
     private storageService: StorageService
   ) {}
 
-  login(email: string, password: string): Observable<Api.Models.Login> {
-    return this.http.post<Api.Models.Login>(`${environment.apiUrl}/login`, {
+  login(email: string, password: string): Observable<any> {
+    return this.http.post<any>(`${environment.apiUrl}/login`, {
       email,
       password,
     });

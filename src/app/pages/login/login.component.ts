@@ -28,8 +28,12 @@ export class LoginComponent implements OnInit {
       const password = this.loginForm.value.password;
 
       this.authService.login(email, password).subscribe(
-        (data) => {},
-        (err) => {}
+        (data) => {
+          console.log(data);
+        },
+        (err) => {
+          console.log(err);
+        }
       );
     }
   }
